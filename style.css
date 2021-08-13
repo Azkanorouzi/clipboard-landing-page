@@ -382,8 +382,6 @@ footer {
   .devices-picture {
     width: 55vw;
   }
- 
-    
 
   .tools {
     display: flex;
@@ -402,7 +400,7 @@ footer {
     position: relative;
     top: 10px;
   }
-    .access-des{
+  .access-des {
     width: 100vw;
   }
   .plain-tool {
@@ -421,16 +419,16 @@ footer {
     position: relative;
     bottom: 60px;
   }
-  .tool-logo1{
-    left:5vw ;
+  .tool-logo1 {
+    left: 5vw;
   }
-  .tool-logo2{
+  .tool-logo2 {
     left: 3vw;
   }
-  .tool-logo3{
+  .tool-logo3 {
     left: 4vw;
   }
-  .logos{
+  .logos {
     display: flex;
     flex-direction: row;
     margin: 0 !important;
@@ -440,61 +438,62 @@ footer {
     margin-bottom: 200px !important;
     height: 30px;
   }
-  .logo{
+  .logo {
     margin: unset !important;
     width: 8vw !important;
   }
-  .download-des{
-  padding-top: 0;
+  .download-des {
+    padding-top: 0;
   }
-  footer{
+  footer {
     flex-direction: row;
     height: 150px;
   }
-  .footer-link{
-   margin: 0 !important;
-   height: 50%;
-       display: flex !important;
+  .footer-link {
+    margin: 0 !important;
+    height: 50%;
+    display: flex !important;
     align-items: center;
     justify-content: flex-start;
     text-align: left;
     position: relative;
-    
   }
-  .footer-logo{
+  .footer-logo {
     position: relative;
     right: 3vw;
   }
-  .footer-link5{
+  .footer-link5 {
     position: relative;
     top: 75px;
     right: 150px;
   }
-  .footer-link2{
+  .footer-link2 {
     position: relative;
-        top: 75px;
+    top: 75px;
     right: 150px;
   }
-  .footer-link3{
+  .footer-link3 {
     position: relative;
     right: 300px;
   }
-  .footer-link4{
-        position: relative;
+  .footer-link4 {
+    position: relative;
     right: 300px;
   }
-  .footer-link1,.footer-link3,.footer-link4{
+  .footer-link1,
+  .footer-link3,
+  .footer-link4 {
     align-items: flex-end;
   }
-  .footer-logos{
-  display: flex;
-  align-items: center;
+  .footer-logos {
+    display: flex;
+    align-items: center;
   }
 }
-@media screen and (min-width: 1680px){
-.computer-picture{
-  right: 35vw;
-}
+@media screen and (min-width: 1680px) {
+  .computer-picture {
+    right: 35vw;
+  }
 }
 /*===============
  media query end
