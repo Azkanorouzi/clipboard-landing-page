@@ -1,0 +1,360 @@
+/*=================
+ defaults & general 
+ ==================*/
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing:border-box;
+ font-size: 18px;
+ font-family: 'Bai Jamjuree', sans-serif;
+ text-align: center;
+}
+
+main{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+}
+body{
+ overflow-x: hidden;
+}
+
+.pictures{
+ width: 90vw;
+ margin: 0px 5vw;
+}
+
+.headers{
+font-size: 30px;
+text-align: center;
+padding: 0px 40px;
+color: hsl(210, 10%, 33%);
+}
+/* 💡 stands for description 💡 */
+
+.des{
+ color: hsl(201, 11%, 66%);
+}
+
+.button{
+ padding: 15px;
+ width: 80vw;
+ margin:0 10vw;
+ border-radius: 100px;
+ border: none;
+ color: white;
+ cursor: pointer;
+}
+.button:hover{
+ transform: scale(1.05);
+}
+.button:active{
+ transform: scale(.95);
+ box-shadow: none; 
+}
+/*===================== 
+defaults & general end 
+======================*/
+
+/*========
+ patterns 
+ ========*/
+.desktop-pattern{
+ display: none;
+}
+
+.desktop-mobile{
+ background: url("./images/bg-header-mobile.png");
+}
+
+.pattern{
+ width: 100vw;
+ height:50vh;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+/*============
+ patterns end 
+ ============*/
+
+/*===================
+ header section start
+ ==================== */
+.header-logo{
+ width: 30vw;
+ margin: 100px 35vw 70px 35vw;
+ margin-right: 35vw;
+ margin-left: 35vw;
+}
+
+.header-des{
+ font-size: 1rem;
+ padding-bottom: 50px;
+ padding: 30px 30px;
+}
+/* 💡 represent for download mac button 💡 */
+.mac-download{
+ margin: 2rem 0;
+ background: hsl(233, 100%, 69%);
+ box-shadow: .5px 3.5px 0 hsl(233, 100%, 64%);
+}
+/* 💡 represent for download ios button 💡 */
+.ios-download{
+ background: hsl(171, 66%, 44%);
+ box-shadow: .5px 3.5px 0 hsl(171, 66%, 39%);
+}
+
+/*==================
+ header section end
+ ================== */
+
+ /*======================
+ utilities section start
+ ======================= */
+
+ .utilities-header{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: hsl(210, 10%, 33%);
+ }
+
+  .utilities-des{
+ padding: 0 30px;
+ }
+
+ .computer-picture{
+  margin: 3rem 0;
+ }
+
+ .utility-des{
+  padding: 2rem;
+  padding-top: 0;
+ }
+
+  /*======================
+ utilities section end
+ ======================= */
+
+ /*=================
+ tools section start
+ ================== */
+ .tools-header{
+  margin-top: 7rem ;
+  font-size: 1.5rem;
+ }
+
+ .tools-des{
+  padding: 1rem;
+ }
+
+ .tool-header2{
+  margin-top:3rem;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+ }
+
+ .devices-picture{
+ margin-top: 2rem;
+ }
+
+ .suprage-des{
+ margin-bottom: 4rem;
+ }
+
+ .tool{
+  margin-top: 5rem;
+ }
+
+ .tool-logo{
+  position: relative;
+  bottom: 2rem;
+  width: 12vw;
+  margin: 0 44vw;
+ }
+ /*=================
+ tools section end
+ ================== */
+
+ /*=================
+ logos section start
+ ================== */
+ /* 💡 represent for logos container 💡 */
+ .logos{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .logos .logo{
+ width: 40vw;
+ margin: 2rem 30vw;
+ }
+ /* 💡 represent for google logo (first one) 💡 */
+ .logos .logo1{
+ margin-top: 8rem;
+ }
+ /* 💡 represent for vector logo (last one) 💡 */
+ .logos .logo5{
+  margin-bottom: 8rem;
+ }
+ /*=================
+ logos section end
+ ================== */
+
+  /*=====================
+  download section start
+ ====================== */
+ .download-header{
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  padding-top: 0;
+ }
+ .download-des{
+  margin:0 1rem;
+  margin-bottom: 3rem;
+ }
+ /*=====================
+ download section end
+ ====================== */
+
+ /*=====================
+ footer section start
+ ====================== */
+ footer{
+  background: hsla(202, 11%, 66%, 0.123);
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .footer-logo{
+  width: 3rem;
+ }
+ .footer-logo-container{
+  margin: 3rem 0 2rem 0;
+ }
+ .footer-link{
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: hsl(201, 11%, 66%);
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ .footer-link4{
+  margin-bottom: 0;
+ }
+ .footer-logos{
+  margin: 2rem 0;
+ }
+ .twitter-icon{
+ margin: 0 2rem;
+ }
+ .footer-link:hover,.social-icons:hover{
+  color: hsl(171, 66%, 44%);
+  cursor: pointer;
+ }
+
+ /*=================
+ footer section end
+ ==================*/
+
+ /*=================
+ media query start
+ ==================*/
+ /* 💡 this media query is responsible for old mobile's screen 💡 */
+ @media screen and (max-width:280px){
+  .mac-download{
+   font-size: 14px;
+  }
+  .header-logo{
+   width: 50vw;
+   margin-left: 25vw;
+   margin-right: 25vw;
+  }
+  .headers ,.download-header,.tool-header,.tool-header2{
+   font-size: 1rem !important;
+  }
+
+ }
+ /* 💡 this media query is in order to reducing button's width for very small screens 💡 */
+  @media screen and (max-width:230px){
+   .mac-download,.ios-download{
+   font-size: 10px;
+   font-weight: 700;
+  }
+  }
+  /* 💡 this media query is in order to reducing header's logo 💡 */
+    @media screen and (min-width:400px){
+  .logo{
+   width: 16vw !important;
+   margin: 2rem 42vw !important;
+  }
+  }
+  /* 💡 media query for tablet devices 💡 */
+  @media screen and (min-width:500px){
+  .button{
+  width: 50vw;
+  margin:1rem 10vw;
+  }
+  .pictures{
+   width: 40vw;
+  }
+  .header-logo{
+   width: 10vw;
+  }
+  .des{
+   width: 60vw;
+   margin-left: 20vw;
+   margin-right: 20vw;
+  }
+  }
+  /* 💡 this media query is in order to reducing tool's logo 💡 */
+  @media screen and (min-width:800px){
+  .tool-logo{
+   width: 4vw;
+   margin: 0 48vw;
+  }
+  }
+  /* 💡 media query for desktop devices 💡 */
+  @media screen and (min-width:1080px){
+   /*  pattern  */
+  .mobile-pattern{
+  display: none;
+  }
+  .desktop-pattern{
+   display: inline;
+  }
+  .button{
+   display: inline;
+   margin: 0 !important;
+   width: 22vw;
+  }
+  .mac-download{
+   margin-left: 1rem !important;
+  }
+  .des{
+   padding: 4rem;
+  }
+ .computer-picture{
+  width: 52vw;
+  position: relative;
+  right: 28vw;
+ }
+ .utility{
+  position: relative;
+  left: 30vw;
+  bottom: 30rem;
+  text-align: left;
+ }
+ .utility-des{
+ padding: 0;
+ margin: 0;
+ }
+}
+ /*===============
+ media query end
+ =================*/
+ 
